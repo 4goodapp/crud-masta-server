@@ -75,3 +75,11 @@
 
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'religion', 'error')} required">
+	<label for="religion">
+		<g:message code="person.religion.label" default="Religion" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="religion" name="religion.id" from="${com.masta.crud.Religion.list()}" optionKey="id" required="" value="${personInstance?.religion?.id}" class="many-to-one"/>
+</div>
+

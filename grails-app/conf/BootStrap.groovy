@@ -4,6 +4,7 @@ import com.masta.crud.EducationType
 import com.masta.crud.Gender
 import com.masta.crud.Hobby
 import com.masta.crud.Province
+import com.masta.crud.Religion
 
 class BootStrap {
 
@@ -37,6 +38,11 @@ class BootStrap {
 		new Hobby(name: "Computer").save(failOnError:true)
 		new Hobby(name: "Music").save(failOnError:true)
 		new Hobby(name: "Game").save(failOnError:true)
+		
+		new Religion(name: "Islam").save(failOnError:true)
+		new Religion(name: "Kristen").save(failOnError:true)
+		new Religion(name: "Buddha").save(failOnError:true)
+		new Religion(name: "Hindu").save(failOnError:true)
     }
     def destroy = {
     }

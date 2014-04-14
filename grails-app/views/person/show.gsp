@@ -99,6 +99,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${personInstance?.religion}">
+				<li class="fieldcontain">
+					<span id="religion-label" class="property-label"><g:message code="person.religion.label" default="Religion" /></span>
+					
+						<span class="property-value" aria-labelledby="religion-label"><g:link controller="religion" action="show" id="${personInstance?.religion?.id}">${personInstance?.religion?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:personInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">

@@ -7,6 +7,7 @@ class Person {
 	City birthCity
 	Gender gender
 	String description
+	Religion religion
 	
 	static hasMany = [hobbies: Hobby, personEducation:PersonEducation]
 
