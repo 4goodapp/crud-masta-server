@@ -7,6 +7,7 @@ import spock.lang.*
 
 @TestFor(PersonController)
 @Mock(Person)
+@Ignore
 class PersonControllerSpec extends Specification {
 
     def populateValidParams(params) {
