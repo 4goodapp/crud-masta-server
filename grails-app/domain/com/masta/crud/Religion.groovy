@@ -1,5 +1,8 @@
 package com.masta.crud
 
+import grails.rest.Resource;
+
+@Resource(uri="/religion", formats=['json', 'xml'])
 class Religion {
 	String name
 

@@ -16,6 +16,7 @@ class Person {
 		password nullable:false
 		birthDay nullable:false
 		birthCity nullable:false
+		description maxSize:1000, blank:false
     }
 	String toString() {
 		return this.name

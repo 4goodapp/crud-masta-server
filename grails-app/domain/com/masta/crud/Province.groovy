@@ -5,7 +5,7 @@ class Province {
 	Country country
 
     static constraints = {
-		name unique:true
+		name unique:true, size:5..15
     }
 	String toString() {
 		return this.name

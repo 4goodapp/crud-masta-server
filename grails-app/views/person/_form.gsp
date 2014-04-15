@@ -34,12 +34,12 @@
 	<g:select id="birthCity" name="birthCity.id" from="${com.masta.crud.City.list()}" optionKey="id" required="" value="${personInstance?.birthCity?.id}" class="many-to-one"/>
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'description', 'error')} ">
+<div class="fieldcontain ${hasErrors(bean: personInstance, field: 'description', 'error')} required">
 	<label for="description">
 		<g:message code="person.description.label" default="Description" />
-		
+		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="description" value="${personInstance?.description}"/>
+	<g:textArea name="description" cols="40" rows="5" maxlength="1000" required="" value="${personInstance?.description}"/>
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: personInstance, field: 'gender', 'error')} required">

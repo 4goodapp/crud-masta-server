@@ -22,5 +22,13 @@ class ReligionSpec extends Specification {
 		then: 'validation should fail'
 		!p.validate()
     }
+	
+	void "inserting name should pass"() {
+		when: 'the name is empty'
+		def p = new Religion(name:"Islam")
+
+		then: 'validation should pass'
+		p.validate()
+	}
 
 }
