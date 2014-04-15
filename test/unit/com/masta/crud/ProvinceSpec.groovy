@@ -28,7 +28,7 @@ class ProvinceSpec extends Specification {
 		when:'10 char province name'
 		def p3 = new Province(name:"Jawa_Timur")
 		
-		then:'validation harus success'
+		then:'validation harus error'
 		!p3.validate()
 		p3.hasErrors()
 		p3.errors['country']!=null
