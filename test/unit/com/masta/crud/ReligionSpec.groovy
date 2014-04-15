@@ -15,6 +15,12 @@ class ReligionSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
+    void "inserting null name should fail"() {
+		when: 'the name is empty'
+		def p = new Religion()
+
+		then: 'validation should fail'
+		!p.validate()
     }
+
 }
