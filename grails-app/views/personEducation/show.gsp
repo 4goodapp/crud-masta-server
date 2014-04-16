@@ -45,7 +45,7 @@
 				<li class="fieldcontain">
 					<span id="person-label" class="property-label"><g:message code="personEducation.person.label" default="Person" /></span>
 					
-						<span class="property-value" aria-labelledby="person-label"><g:link controller="person" action="show" id="${personEducationInstance?.person?.id}">${personEducationInstance?.person?.encodeAsHTML()}</g:link></span>
+						<span class="property-value" aria-labelledby="person-label"><g:link controller="personWeb" action="show" id="${personEducationInstance?.person?.id}">${personEducationInstance?.person?.encodeAsHTML()}</g:link></span>
 					
 				</li>
 				</g:if>

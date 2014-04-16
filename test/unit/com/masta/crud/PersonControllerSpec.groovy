@@ -5,7 +5,7 @@ package com.masta.crud
 import grails.test.mixin.*
 import spock.lang.*
 
-@TestFor(PersonController)
+@TestFor(PersonWebController)
 @Mock(Person)
 @Ignore
 class PersonControllerSpec extends Specification {

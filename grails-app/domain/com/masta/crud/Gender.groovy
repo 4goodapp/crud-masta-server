@@ -1,5 +1,8 @@
 package com.masta.crud
 
+import grails.rest.Resource
+
+@Resource(uri="/rest/gender", formats=['json', 'xml'])
 class Gender {
 	String code
 	String name

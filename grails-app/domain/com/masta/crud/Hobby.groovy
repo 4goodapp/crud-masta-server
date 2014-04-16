@@ -1,5 +1,8 @@
 package com.masta.crud
 
+import grails.rest.Resource
+
+@Resource(uri="/rest/hobby", formats=['json', 'xml'])
 class Hobby {
 	String name
 
